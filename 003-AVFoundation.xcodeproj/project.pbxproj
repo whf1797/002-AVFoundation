@@ -15,6 +15,8 @@
 		9BA1AB7D21A3029C003B8CD0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA1AB7C21A3029C003B8CD0 /* main.m */; };
 		9BA1AB8721A3029D003B8CD0 /* _03_AVFoundationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA1AB8621A3029D003B8CD0 /* _03_AVFoundationTests.m */; };
 		9BA1AB9221A3029D003B8CD0 /* _03_AVFoundationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA1AB9121A3029D003B8CD0 /* _03_AVFoundationUITests.m */; };
+		9BC2CB1F21A59C7B00E1B32F /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BC2CB1E21A59C7B00E1B32F /* OpenGLES.framework */; };
+		9BC2CB2121A59C8700E1B32F /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BC2CB2021A59C8700E1B32F /* GLKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		9BA1AB8D21A3029D003B8CD0 /* 003-AVFoundationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "003-AVFoundationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BA1AB9121A3029D003B8CD0 /* _03_AVFoundationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _03_AVFoundationUITests.m; sourceTree = "<group>"; };
 		9BA1AB9321A3029D003B8CD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BC2CB1E21A59C7B00E1B32F /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		9BC2CB2021A59C8700E1B32F /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BC2CB2121A59C8700E1B32F /* GLKit.framework in Frameworks */,
+				9BC2CB1F21A59C7B00E1B32F /* OpenGLES.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +91,7 @@
 				9BA1AB8521A3029D003B8CD0 /* 003-AVFoundationTests */,
 				9BA1AB9021A3029D003B8CD0 /* 003-AVFoundationUITests */,
 				9BA1AB6B21A3029A003B8CD0 /* Products */,
+				9BC2CB1D21A59C7B00E1B32F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,6 +137,15 @@
 				9BA1AB9321A3029D003B8CD0 /* Info.plist */,
 			);
 			path = "003-AVFoundationUITests";
+			sourceTree = "<group>";
+		};
+		9BC2CB1D21A59C7B00E1B32F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9BC2CB2021A59C8700E1B32F /* GLKit.framework */,
+				9BC2CB1E21A59C7B00E1B32F /* OpenGLES.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -436,6 +452,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FDD358JY67;
 				INFOPLIST_FILE = "003-AVFoundation/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,6 +469,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FDD358JY67;
 				INFOPLIST_FILE = "003-AVFoundation/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
